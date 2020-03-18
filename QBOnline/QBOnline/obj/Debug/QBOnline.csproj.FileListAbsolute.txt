@@ -1,0 +1,891 @@
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.csprojAssemblyReference.cache
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\DocumentDB.Spatial.Sql.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\QBOnline.dll.config
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\QBOnline.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\QBOnline.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\netstandard.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.AppContext.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.Concurrent.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.NonGeneric.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.Specialized.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Console.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Data.Common.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Debug.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Process.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Tools.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Drawing.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Dynamic.Runtime.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Globalization.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Globalization.Extensions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.Compression.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.Pipes.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.Expressions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.Parallel.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.Queryable.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Http.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.NameResolution.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.NetworkInformation.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Ping.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Requests.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Security.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Sockets.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.WebSockets.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ObjectModel.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Reflection.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Reflection.Extensions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Reflection.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Resources.Reader.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Resources.ResourceManager.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Resources.Writer.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Handles.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Numerics.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Claims.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Principal.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.SecureString.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Text.Encoding.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Overlapped.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Tasks.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Thread.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Timer.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ValueTuple.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XDocument.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XmlDocument.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XPath.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Core.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Data.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.DataService.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Exception.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.ReportService.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Retry.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Security.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Utility.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Newtonsoft.Json.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Enrichers.Environment.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Enrichers.Thread.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Extensions.Logging.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Settings.Configuration.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.AzureDocumentDB.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Debug.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Literate.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Trace.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\SerilogTraceListener.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Buffers.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Memory.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.AccessControl.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Permissions.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Core.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Core.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Data.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Data.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.DataService.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.DataService.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Exception.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Exception.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.ReportService.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.ReportService.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Retry.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Retry.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Security.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Security.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Utility.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Utility.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Newtonsoft.Json.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Enrichers.Thread.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Extensions.Logging.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Settings.Configuration.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Console.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Debug.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Literate.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Trace.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\SerilogTraceListener.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Buffers.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Memory.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.AccessControl.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Permissions.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.csproj.CopyComplete
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.dll
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\DocumentDB.Spatial.Sql.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\QBOnline.dll.config
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\QBOnline.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\QBOnline.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Win32.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\netstandard.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.AppContext.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.Concurrent.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.NonGeneric.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Collections.Specialized.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ComponentModel.TypeConverter.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Console.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Data.Common.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Contracts.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Debug.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Process.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.StackTrace.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Tools.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.TraceSource.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Diagnostics.Tracing.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Drawing.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Dynamic.Runtime.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Globalization.Calendars.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Globalization.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Globalization.Extensions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.Compression.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.Compression.ZipFile.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.FileSystem.Watcher.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.IsolatedStorage.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.MemoryMappedFiles.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.Pipes.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.Expressions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.Parallel.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Linq.Queryable.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Http.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.NameResolution.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.NetworkInformation.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Ping.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Requests.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Security.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Sockets.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.WebHeaderCollection.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.WebSockets.Client.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.WebSockets.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ObjectModel.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Reflection.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Reflection.Extensions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Reflection.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Resources.Reader.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Resources.ResourceManager.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Resources.Writer.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Extensions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Handles.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.InteropServices.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Numerics.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Formatters.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Json.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.Serialization.Xml.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Claims.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Algorithms.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Csp.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Encoding.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Principal.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.SecureString.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Text.Encoding.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Text.Encoding.Extensions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Text.RegularExpressions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Overlapped.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Tasks.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Tasks.Parallel.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Thread.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.ThreadPool.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Threading.Timer.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.ValueTuple.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.ReaderWriter.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XDocument.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XmlDocument.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XmlSerializer.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XPath.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Xml.XPath.XDocument.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Core.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Data.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.DataService.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Exception.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.ReportService.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Retry.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Security.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Utility.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Newtonsoft.Json.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Enrichers.Environment.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Enrichers.Thread.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Extensions.Logging.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Settings.Configuration.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.AzureDocumentDB.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Console.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Debug.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.File.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Literate.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Trace.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\SerilogTraceListener.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Buffers.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Memory.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Net.Http.WinHttpHandler.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Numerics.Vectors.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.AccessControl.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Cryptography.Xml.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Permissions.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Principal.Windows.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Core.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Core.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Data.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Data.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.DataService.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.DataService.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Exception.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Exception.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.ReportService.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.ReportService.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Retry.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Retry.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Security.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Security.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Utility.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.Utility.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Newtonsoft.Json.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Enrichers.Thread.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Extensions.Logging.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Settings.Configuration.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Console.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Debug.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.File.pdb
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.File.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Literate.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\Serilog.Sinks.Trace.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\SerilogTraceListener.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Buffers.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Memory.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Numerics.Vectors.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.AccessControl.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Permissions.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\bin\Debug\System.Security.Principal.Windows.xml
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.csproj.CopyComplete
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.dll
+\\Mac\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.pdb
+C:\Users\markm\Dropbox\TSI Code\QBInterface\QBOnline\obj\Debug\QBOnline.csprojAssemblyReference.cache
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\DocumentDB.Spatial.Sql.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\QBOnline.dll.config
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\QBOnline.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\QBOnline.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Core.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Data.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.DataService.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Exception.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.ReportService.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Retry.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Security.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Utility.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Enrichers.Environment.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Enrichers.Thread.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Extensions.Logging.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Settings.Configuration.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.AzureDocumentDB.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Debug.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Literate.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Trace.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\SerilogTraceListener.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Buffers.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Memory.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Security.AccessControl.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Security.Permissions.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Core.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Core.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Data.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Data.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.DataService.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.DataService.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Exception.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Exception.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.ReportService.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.ReportService.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Retry.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Retry.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Security.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Security.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Utility.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.Utility.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Enrichers.Thread.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Extensions.Logging.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Settings.Configuration.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Console.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Debug.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Literate.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\Serilog.Sinks.Trace.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\SerilogTraceListener.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Buffers.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Memory.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Security.AccessControl.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Security.Permissions.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\obj\Debug\QBOnline.csproj.CopyComplete
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\obj\Debug\QBOnline.dll
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\obj\Debug\QBOnline.pdb
+C:\Users\nathanaelmattay\hello-world\Projects\QBOnline\obj\Debug\QBOnline.csprojAssemblyReference.cache
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Cosmos.CRTCompat.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\QBOnline.dll.config
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\QBOnline.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\QBOnline.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Core.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Data.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.DataService.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Exception.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.ReportService.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Retry.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Security.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Utility.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Newtonsoft.Json.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Enrichers.Environment.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Enrichers.Thread.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Extensions.Logging.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Settings.Configuration.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.AzureDocumentDB.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Debug.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Literate.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Trace.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\SerilogTraceListener.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Buffers.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Memory.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.AccessControl.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.Permissions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Text.Json.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.ValueTuple.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Core.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Core.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Data.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Data.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.DataService.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.DataService.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Exception.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Exception.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.ReportService.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.ReportService.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Retry.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Retry.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Security.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Security.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Utility.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.Utility.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Newtonsoft.Json.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Enrichers.Thread.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Extensions.Logging.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Settings.Configuration.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Console.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Debug.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Literate.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\Serilog.Sinks.Trace.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\SerilogTraceListener.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Buffers.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Memory.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Net.Http.WinHttpHandler.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.AccessControl.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.Permissions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Text.Json.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\bin\Debug\System.ValueTuple.xml
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\obj\Debug\QBOnline.csproj.CopyComplete
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\obj\Debug\QBOnline.dll
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\obj\Debug\QBOnline.pdb
+C:\Users\markm\Documents\GitHub\Projects\QBOnline\obj\Debug\QBOnline.csprojAssemblyReference.cache
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Cosmos.CRTCompat.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\QBOnline.dll.config
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\QBOnline.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\QBOnline.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Core.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Data.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.DataService.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Exception.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.ReportService.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Retry.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Security.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Utility.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Newtonsoft.Json.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Enrichers.Environment.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Enrichers.Thread.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Extensions.Logging.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Settings.Configuration.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.AzureDocumentDB.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Debug.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Literate.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Trace.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\SerilogTraceListener.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Buffers.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Memory.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.AccessControl.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.Permissions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Text.Json.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.ValueTuple.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Core.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Core.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Data.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Data.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.DataService.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.DataService.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Diagnostics.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.EntitlementService.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Exception.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Exception.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.GlobalTaxService.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.OAuth2PlatformClient.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.QueryFilter.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.ReportService.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.ReportService.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Retry.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Retry.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Security.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Security.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Utility.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.Utility.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Intuit.Ipp.WebHooksService.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\IppDotNetSdkForQuickBooksApiV3.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Azure.Documents.Client.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Configuration.Xml.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Newtonsoft.Json.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Enrichers.Thread.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Extensions.Logging.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Settings.Configuration.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Console.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Debug.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Literate.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\Serilog.Sinks.Trace.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\SerilogTraceListener.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Buffers.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Memory.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Net.Http.WinHttpHandler.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.AccessControl.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.Permissions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Text.Json.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\bin\Debug\System.ValueTuple.xml
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\obj\Debug\QBOnline.csprojAssemblyReference.cache
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\obj\Debug\QBOnline.csproj.CopyComplete
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\obj\Debug\QBOnline.dll
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\QBOnline\obj\Debug\QBOnline.pdb
