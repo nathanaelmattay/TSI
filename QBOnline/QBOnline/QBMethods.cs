@@ -12,6 +12,7 @@ using Intuit.Ipp.DataService;
 using System.Diagnostics;
 using System.Data.SqlClient;
 
+
 namespace TSI.QBInterface
 {
     public class QBMethods
@@ -45,6 +46,7 @@ namespace TSI.QBInterface
         private static Dictionary<string, string> Terms = new Dictionary<string, string>();
         private static Dictionary<string, string> Departments = new Dictionary<string, string>();
         private static Dictionary<string, string> CustomerTypes = new Dictionary<string, string>();
+        private static Dictionary<string, string> Vendors = new Dictionary<string, string>();
         //private string authorizeUrl;
         public QBMethods()
         {
@@ -81,7 +83,6 @@ namespace TSI.QBInterface
                     var authorizeUrl = oauthClient.GetAuthorizationURL(scopes);
                     ProcessStartInfo sInfo = new ProcessStartInfo(authorizeUrl);
                     Process.Start(sInfo);
-
                 }
             }
             catch (Exception ex)
@@ -196,49 +197,82 @@ namespace TSI.QBInterface
         }
 
 
-        public void CreatePayablesBill(DataTable dtBill, DataTable sentDtBillItems)
+        public string CreatePayablesBill(DataTable dtBill)
         {
+
+            if (services == null)
+                CreateService();
+            if (Items.Count == 0)
+                GetProductAndServicesPrefs();
+            if (Classes.Count == 0)
+                GetClasses();
+            if (Terms.Count == 0)
+                GetTerms();
+            if (Vendors.Count == 0)
+                GetVendors();
+
             Bill bill = new Bill();
-            bill.DocNumber = Guid.NewGuid().ToString("N").Substring(0, 10);
-            bill.TxnStatus = "Payable";
+            //bill.DocNumber = Guid.NewGuid().ToString("N").Substring(0, 10);
+            //bill.TxnStatus = "Payable";
 
             bill.APAccountRef = new ReferenceType()
             {
                 type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account),
                 name = "Account Payable",
-                Value = "QB:1"
+                Value = string.Concat((string)dtBill.Rows[0]["BillLineGLCode"])
             };
-            bill.VendorRef = new ReferenceType()
-            {
-                type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Vendor),
-                //name = "sentVendorKey",
-                Value = string.Concat("QB:", ((string)dtBill.Rows[0]["VendorName"]))
-            };
+            bill.VendorRef = new ReferenceType();
+            bill.VendorRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Vendor);
+            bill.VendorRef.name = (string)dtBill.Rows[0]["VendorName"];
+            bill.VendorRef.Value =Vendors[(string)dtBill.Rows[0]["VendorName"]];
 
-            //	bill.TxnDate.SetValue((DateTime)dtBill.Rows[0]["BillDate"]);
-            //	bill.Memo.SetValue((string)dtBill.Rows[0]["VendorBillMemo"]);
-            //	bill.RefNumber.SetValue((string)dtBill.Rows[0]["VendorInvoiceNumber"]);
 
-            bill.TxnTaxDetail = new TxnTaxDetail();
-            bill.TxnTaxDetail.DefaultTaxCodeRef = new ReferenceType()
-            {
-                Value = "QB:123",
-                type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.TaxCode),
-                name = "TaxCodeName"
-            };
-            bill.TxnTaxDetail.TotalTax = new Decimal(0.00);
-            bill.TxnTaxDetail.TotalTaxSpecified = true;
+            bill.TxnDate = (DateTime)dtBill.Rows[0]["BillDate"];
+            bill.TxnDateSpecified = true;
+            bill.DueDate = (DateTime)dtBill.Rows[0]["BillDate"];
+            bill.DueDateSpecified = true;
+            //bill.Memo((string)dtBill.Rows[0]["VendorBillMemo"]);
+            //bill.DocNumber((string)dtBill.Rows[0]["VendorInvoiceNumber"]);
 
-            Line[] lines = new Line[sentDtBillItems.Rows.Count];
+            //bill.TxnTaxDetail = new TxnTaxDetail();
+            //bill.TxnTaxDetail.DefaultTaxCodeRef = new ReferenceType()
+            //{
+            //    Value = "QB:123",
+            //    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.TaxCode),
+            //    name = "TaxCodeName"
+            //};
+            //bill.TxnTaxDetail.TotalTax = new Decimal(0.00);
+            //bill.TxnTaxDetail.TotalTaxSpecified = true;
+
+            Line[] lines = new Line[dtBill.Rows.Count];
             int billLineCnt = 0;
-            foreach (System.Data.DataRow poItemrow in sentDtBillItems.Rows)
+            foreach (System.Data.DataRow poItemrow in dtBill.Rows)
             {
                 Line line1 = new Line();
-                line1.Amount = (decimal)poItemrow["POLineQty"];
+                line1.Amount = (decimal)poItemrow["BillLineAmount"];
                 line1.AmountSpecified = true;
-                line1.Description = poItemrow["VendorItemNbr"].ToString();
-                line1.LineNum = poItemrow["POLinePrintOrder"].ToString();
-                line1.Id = (billLineCnt + 1).ToString();
+                line1.Description = poItemrow["BillLineDescription"].ToString();
+                
+                AccountBasedExpenseLineDetail lineDetail = new AccountBasedExpenseLineDetail();
+                lineDetail.BillableStatus = BillableStatusEnum.Billable;
+                lineDetail.ClassRef = new ReferenceType
+                {
+
+                    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
+                    name = (string)poItemrow["RegionName"],
+                    Value = Classes[(string)poItemrow["RegionName"]]
+
+                };
+
+
+
+
+
+
+
+
+                //line1. = poItemrow["POLinePrintOrder"].ToString();
+                //line1.Id = (billLineCnt + 1).ToString();
 
                 //PurchaseOrderItemLineDetail purchaseOrderItemLineDetail = new PurchaseOrderItemLineDetail();
                 //purchaseOrderItemLineDetail.Qty = (decimal)poItemrow["POLineQty"];
@@ -247,29 +281,33 @@ namespace TSI.QBInterface
                 //purchaseOrderItemLineDetail.ItemElementName = ItemChoiceType.UnitPrice;
                 //line1.AnyIntuitObject = purchaseOrderItemLineDetail;
 
-                AccountBasedExpenseLineDetail accountBasedExpenseLineDetail = new AccountBasedExpenseLineDetail();
-                accountBasedExpenseLineDetail.AccountRef = new ReferenceType()
-                {
-                    Value = poItemrow["AccountNumber"].ToString()
-                };
-                accountBasedExpenseLineDetail.ClassRef = new ReferenceType()
-                {
-                    Value = poItemrow["Class"].ToString()
-                };
-                accountBasedExpenseLineDetail.BillableStatus = BillableStatusEnum.Billable;
-                line1.AnyIntuitObject = accountBasedExpenseLineDetail;
+                //AccountBasedExpenseLineDetail accountBasedExpenseLineDetail = new AccountBasedExpenseLineDetail();
+                //accountBasedExpenseLineDetail.AccountRef = new ReferenceType()
+                //{
+                //    Value = poItemrow["AccountNumber"].ToString()
+                //};
+                //accountBasedExpenseLineDetail.ClassRef = new ReferenceType()
+                //{
+                //    Value = poItemrow["Class"].ToString()
+                //};
+                //accountBasedExpenseLineDetail.BillableStatus = BillableStatusEnum.Billable;
+                //line1.AnyIntuitObject = accountBasedExpenseLineDetail;
 
                 lines[billLineCnt] = line1;
                 billLineCnt++;
-            }
-            bill.Line = lines;
 
+                bill.Line = lines;
+            }
             Bill resultBill = services.Add(bill) as Bill;
+            return "Vendor Bill Loaded";
         }
+
+
 
 
         public string CreateReceivablesInvoice(DataTable dtInvoice)
         {
+
             if (services == null)
                 CreateService();
             if (Items.Count == 0)
@@ -491,83 +529,298 @@ namespace TSI.QBInterface
 
         }
 
-        public void CreateReceivablesCreditMemo(DataTable dtInvoice)
+        public string CreateReceivablesCreditMemo(DataTable dtInvoice)
         {
-            CreditMemo creditMemo = new CreditMemo();
-            creditMemo.DocNumber = Guid.NewGuid().ToString("N").Substring(0, 10);
+            if (services == null)
+                CreateService();
+            if (Items.Count == 0)
+                GetProductAndServicesPrefs();
+            if (Classes.Count == 0)
+                GetClasses();
+            if (Terms.Count == 0)
+                GetTerms();
+            if (Departments.Count == 0)
+                GetDepartments();
 
-            creditMemo.CustomerRef = new ReferenceType()
+            CreditMemo creditMemo = new CreditMemo();
+            //invoice.TemplateRef.name = "Trinity Stairs Invoice";
+            creditMemo.TemplateRef = new ReferenceType()
             {
-                type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Customer),
-                //name = "TestCustomer",
-                Value = string.Concat("QB:", (string)dtInvoice.Rows[0]["CustomerName"])
+                type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.CompanyInfo),
+                //name = "Type",
+                name = "Trinity Stairs Credit Memo"
+            };
+            creditMemo.DocNumber = Convert.ToString(dtInvoice.Rows[0]["InvoiceID"]);
+            if (CustomerIDs.Count == 0)
+                GetCustomerList();
+
+            creditMemo.CustomerRef = new ReferenceType();
+            creditMemo.CustomerRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Customer);
+            creditMemo.CustomerRef.name = (string)dtInvoice.Rows[0]["CustomerName"];
+            if (!CustomerIDs.ContainsKey((string)dtInvoice.Rows[0]["CustomerName"]))
+                return "Credit Memo not loaded: Customer not in QB";
+
+            creditMemo.CustomerRef.Value = CustomerIDs[(string)dtInvoice.Rows[0]["CustomerName"]];
+
+            creditMemo.ClassRef = new ReferenceType()
+            {
+                type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
+                name = (string)dtInvoice.Rows[0]["RegionName"],
+                Value = Classes[(string)dtInvoice.Rows[0]["RegionName"]]
+            };
+            creditMemo.CustomField = new CustomField[2];
+            if (dtInvoice.Rows[0]["SalesOrderNumber"] != DBNull.Value)
+            {
+                string tempPONumber = (string)dtInvoice.Rows[0]["SalesOrderNumber"];
+                if (tempPONumber.Length > 25)
+                    tempPONumber = tempPONumber.Remove(25);
+                creditMemo.PONumber = tempPONumber;
+
+                CustomField cf1 = new CustomField();
+                cf1.Type = CustomFieldTypeEnum.StringType;
+                cf1.Name = "P.O. Number";
+                cf1.AnyIntuitObject = tempPONumber;
+                cf1.DefinitionId = "1";
+                creditMemo.CustomField[0] = cf1;
+            }
+
+            creditMemo.TxnDate = (DateTime)dtInvoice.Rows[0]["InvoiceDate"];
+            creditMemo.TxnDateSpecified = true;
+            creditMemo.DueDate = (DateTime)dtInvoice.Rows[0]["InvoiceDate"];
+            creditMemo.DueDateSpecified = true;
+            creditMemo.ShipDate = (DateTime)dtInvoice.Rows[0]["InvoiceDate"];
+            creditMemo.ShipDateSpecified = true;
+
+            creditMemo.DepartmentRef = new ReferenceType()
+
+            {
+                type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Department),
+                name = (string)dtInvoice.Rows[0]["RegionName"],
+                Value = Departments[(string)dtInvoice.Rows[0]["RegionName"]]
             };
 
-            if (dtInvoice.Rows[0]["SalesOrderNumber"] != DBNull.Value)
-                creditMemo.PONumber = (string)dtInvoice.Rows[0]["SalesOrderNumber"];
-            //creditMemo.CustomerMemo = new MemoRef()
-            //{
-            //    Value = sentInvAddr
-            //};
+            if (dtInvoice.Rows[0]["PaymentTermDescription"] != DBNull.Value)
+            {
+                creditMemo.SalesTermRef = new ReferenceType();
+                creditMemo.SalesTermRef.name = ((string)dtInvoice.Rows[0]["PaymentTermDescription"]).TrimEnd();
+                if (!Terms.ContainsKey(((string)dtInvoice.Rows[0]["PaymentTermDescription"]).TrimEnd()))
+                {
+                    return "Payment Terms not in Terms collection:" + ((string)dtInvoice.Rows[0]["PaymentTermDescription"]).TrimEnd();
+                }
+                creditMemo.SalesTermRef.Value = Terms[((string)dtInvoice.Rows[0]["PaymentTermDescription"]).TrimEnd()];
+                creditMemo.SalesTermRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Term);
+            }
 
-            //creditMemo.TotalAmt = sentInvAmount;
-            creditMemo.TotalAmtSpecified = false;
 
-            if (dtInvoice.Rows[0]["InvoiceTax"] != null && Convert.ToDecimal(dtInvoice.Rows[0]["InvoiceTax"]) != 0)
+            //if (dtInvoice.Rows[0]["ScheduledDate"] != DBNull.Value)
+            // invoice.Other.SetValue(((DateTime)dtInvoice.Rows[0]["ScheduledDate"]).ToShortDateString());
+            creditMemo.ShipAddr = new PhysicalAddress()
+            {
+                Line1 = (string)dtInvoice.Rows[0]["AddressStreet"],
+                CountrySubDivisionCode = (string)dtInvoice.Rows[0]["AddressState"],
+                City = (string)dtInvoice.Rows[0]["AddressCity"],
+                PostalCode = (string)dtInvoice.Rows[0]["AddressZip"]
+            };
+
+            if (dtInvoice.Rows[0]["InvoiceTax"] != DBNull.Value)
             {
                 creditMemo.TxnTaxDetail = new TxnTaxDetail();
                 creditMemo.TxnTaxDetail.TotalTax = (decimal)dtInvoice.Rows[0]["InvoiceTax"];
                 creditMemo.TxnTaxDetail.TotalTaxSpecified = true;
+
             }
 
-            creditMemo.DueDate = (DateTime)dtInvoice.Rows[0]["InvoiceDate"];
-            creditMemo.DueDateSpecified = true;
+
+
+            List<Line> CMLines = new List<Line>();
+            int cmLineCnt = 0;
+            //Add Invoice Lines
+            foreach (DataRow dtRow in dtInvoice.Rows)
+            {
+                Line creditMemoLine = new Line();
+                //creditMemoLine.ItemRef.FullName.SetValue((string)dtRow["Jobtype"]);
+                creditMemoLine.Description = ((string)dtRow["InvoiceLineText"]);
+                creditMemoLine.Amount = (Convert.ToDecimal(dtRow["InvoiceLineTotalAmount"]));
+                creditMemoLine.AmountSpecified = true;
+
+                creditMemoLine.DetailType = LineDetailTypeEnum.SalesItemLineDetail;
+                creditMemoLine.DetailTypeSpecified = true;
+                creditMemoLine.Id = (cmLineCnt + 1).ToString();
+                cmLineCnt++;
+
+
+
+                SalesItemLineDetail lineSalesItemLineDetail = new SalesItemLineDetail();
+                lineSalesItemLineDetail.ItemRef = new ReferenceType()
+                {
+                    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Item),
+                    name = (string)dtRow["JobType"],
+                    Value = Items[(string)dtRow["JobType"]]
+                };
+                lineSalesItemLineDetail.ClassRef = new ReferenceType()
+                {
+                    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
+                    name = (string)dtRow["RegionName"],
+                    Value = Classes[(string)dtRow["RegionName"]]
+                };
+
+                lineSalesItemLineDetail.Qty = 1m;
+                lineSalesItemLineDetail.QtySpecified = true;
+
+                //Causes XML Error
+                //lineSalesItemLineDetail.AnyIntuitObject = Convert.ToInt64(Math.Abs(Convert.ToDecimal(dtRow["InvoiceLineTotalAmount"])));
+
+                //Line Sales Item Line Detail - TaxCodeRef
+                //For US companies, this can be 'TAX' or 'NON'
+                if (dtInvoice.Rows[0]["InvoiceTax"] != DBNull.Value)
+                {
+                    lineSalesItemLineDetail.TaxCodeRef = new ReferenceType();
+                    if ((decimal)dtRow["InvoiceTax"] > 0)
+                    {
+                        lineSalesItemLineDetail.TaxCodeRef.Value = "TAX";
+                    }
+                    else
+                    {
+                        lineSalesItemLineDetail.TaxCodeRef.Value = "NON";
+                    }
+
+                }
+
+                //Line Sales Item Line Detail - ServiceDate 
+                lineSalesItemLineDetail.ServiceDate = DateTime.Now.Date;
+                lineSalesItemLineDetail.ServiceDateSpecified = true;
+                //Assign Sales Item Line Detail to Line Item
+                creditMemoLine.AnyIntuitObject = lineSalesItemLineDetail;
+
+                CMLines.Add(creditMemoLine);
+            }
+
+            if (dtInvoice.Rows[0]["InvoiceDiscount"] != DBNull.Value && Convert.ToDecimal(dtInvoice.Rows[0]["InvoiceDiscount"]) != 0)
+            {
+
+                Line creditMemoLine = new Line();
+                creditMemoLine.Description = "Discount";
+                creditMemoLine.Amount = (Convert.ToDecimal(dtInvoice.Rows[0]["InvoiceDiscount"]));
+                creditMemoLine.AmountSpecified = true;
+                creditMemoLine.DetailType = LineDetailTypeEnum.DiscountLineDetail;
+                creditMemoLine.Id = (cmLineCnt + 1).ToString();
+                cmLineCnt++;
+                CMLines.Add(creditMemoLine);
+
+            }
+
+            if (dtInvoice.Rows[0]["InvoiceShipping"] != DBNull.Value && Convert.ToDecimal(dtInvoice.Rows[0]["InvoiceShipping"]) > 0)
+            {
+                Line creditMemoLine = new Line()
+                {
+                    Amount = (decimal)dtInvoice.Rows[0]["InvoiceShipping"],
+                    AmountSpecified = true,
+                    DetailType = LineDetailTypeEnum.SalesItemLineDetail,
+                    Description = "Shipping"
+                };
+                creditMemoLine.DetailTypeSpecified = true;
+                creditMemoLine.Id = (cmLineCnt + 1).ToString();
+                cmLineCnt++;
+                CMLines.Add(creditMemoLine);
+            }
+
+
+
+            //invoice.CustomerMemo = new MemoRef()
+            //{
+            //    Value = sentInvAddr
+            //};
 
             creditMemo.ARAccountRef = new ReferenceType()
             {
                 type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account),
                 name = "Account Receivable",
-                Value = "QB:37"
+                Value = string.Concat((string)dtInvoice.Rows[0]["RegionARGLCode"])
             };
 
-            creditMemo.ClassRef = new ReferenceType()
-            {
-                type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
-                name = "Class ??",
-                Value = "QB:37"
-            };
-            creditMemo.TxnDate = DateTime.Today.Date;
-            creditMemo.TxnDateSpecified = true;
+            creditMemo.TotalAmt = (Convert.ToDecimal(dtInvoice.Rows[0]["JobInvoiceAmount"]));
+            creditMemo.TotalAmtSpecified = true;
 
-            Line[] lines = new Line[dtInvoice.Rows.Count];
-            int ivLineCnt = 0;
-            foreach (System.Data.DataRow dtRow in dtInvoice.Rows)
-            {
-                Line line = new Line();
-                line.Amount = decimal.Round((decimal)dtRow["InvoiceAmount"], 2);
-                line.AmountSpecified = true;
-                line.Description = (string)dtRow["DistType"];
+            creditMemo.Line = CMLines.ToArray();
 
-                if ((string)dtRow["DistType"] == "Sales")
-                    line.DetailType = LineDetailTypeEnum.SalesItemLineDetail;
-                else if ((string)dtRow["DistType"] == "Shipping")
-                    line.DetailType = LineDetailTypeEnum.SalesItemLineDetail;
-                else if ((string)dtRow["DistType"] == "Discount")
-                    line.DetailType = LineDetailTypeEnum.DiscountLineDetail;
-                else if ((string)dtRow["DistType"] == "Deposit")
-                    line.DetailType = LineDetailTypeEnum.DepositLineDetail;
-                else
-                    line.DetailType = LineDetailTypeEnum.SalesItemLineDetail;
-                line.DetailTypeSpecified = true;
-                line.Id = (ivLineCnt + 1).ToString();
+            CreditMemo resultBill = services.Add(creditMemo) as CreditMemo;
 
-                lines[ivLineCnt] = line;
-                ivLineCnt++;
-            }
+            return "Credit Memo Loaded";
+            //CreditMemo creditMemo = new CreditMemo();
+            //creditMemo.DocNumber = Guid.NewGuid().ToString("N").Substring(0, 10);
 
-            creditMemo.Line = lines;
+            //creditMemo.CustomerRef = new ReferenceType()
+            //{
+            //    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Customer),
+            //    //name = "TestCustomer",
+            //    Value = string.Concat("QB:", (string)dtInvoice.Rows[0]["CustomerName"])
+            //};
 
-            CreditMemo resultCreditMemo = services.Add(creditMemo) as CreditMemo;
+            //if (dtInvoice.Rows[0]["SalesOrderNumber"] != DBNull.Value)
+            //    creditMemo.PONumber = (string)dtInvoice.Rows[0]["SalesOrderNumber"];
+            ////creditMemo.CustomerMemo = new MemoRef()
+            ////{
+            ////    Value = sentInvAddr
+            ////};
+
+            ////creditMemo.TotalAmt = sentInvAmount;
+            //creditMemo.TotalAmtSpecified = false;
+
+            //if (dtInvoice.Rows[0]["InvoiceTax"] != null && Convert.ToDecimal(dtInvoice.Rows[0]["InvoiceTax"]) != 0)
+            //{
+            //    creditMemo.TxnTaxDetail = new TxnTaxDetail();
+            //    creditMemo.TxnTaxDetail.TotalTax = (decimal)dtInvoice.Rows[0]["InvoiceTax"];
+            //    creditMemo.TxnTaxDetail.TotalTaxSpecified = true;
+            //}
+
+            //creditMemo.DueDate = (DateTime)dtInvoice.Rows[0]["InvoiceDate"];
+            //creditMemo.DueDateSpecified = true;
+
+            //creditMemo.ARAccountRef = new ReferenceType()
+            //{
+            //    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account),
+            //    name = "Account Receivable",
+            //    Value = "QB:37"
+            //};
+
+            //creditMemo.ClassRef = new ReferenceType()
+            //{
+            //    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
+            //    name = "Class ??",
+            //    Value = "QB:37"
+            //};
+            //creditMemo.TxnDate = DateTime.Today.Date;
+            //creditMemo.TxnDateSpecified = true;
+
+            //Line[] lines = new Line[dtInvoice.Rows.Count];
+            //int ivLineCnt = 0;
+            //foreach (System.Data.DataRow dtRow in dtInvoice.Rows)
+            //{
+            //    Line line = new Line();
+            //    line.Amount = decimal.Round((decimal)dtRow["InvoiceAmount"], 2);
+            //    line.AmountSpecified = true;
+            //    line.Description = (string)dtRow["DistType"];
+
+            //    if ((string)dtRow["DistType"] == "Sales")
+            //        line.DetailType = LineDetailTypeEnum.SalesItemLineDetail;
+            //    else if ((string)dtRow["DistType"] == "Shipping")
+            //        line.DetailType = LineDetailTypeEnum.SalesItemLineDetail;
+            //    else if ((string)dtRow["DistType"] == "Discount")
+            //        line.DetailType = LineDetailTypeEnum.DiscountLineDetail;
+            //    else if ((string)dtRow["DistType"] == "Deposit")
+            //        line.DetailType = LineDetailTypeEnum.DepositLineDetail;
+            //    else
+            //        line.DetailType = LineDetailTypeEnum.SalesItemLineDetail;
+            //    line.DetailTypeSpecified = true;
+            //    line.Id = (ivLineCnt + 1).ToString();
+
+            //    lines[ivLineCnt] = line;
+            //    ivLineCnt++;
+            //}
+
+            //creditMemo.Line = lines;
+
+            //CreditMemo resultCreditMemo = services.Add(creditMemo) as CreditMemo;
         }
 
         /// <summary>
@@ -729,10 +982,17 @@ namespace TSI.QBInterface
 
         public string AddVendor(DataTable dtVendors)
         {
+            if (services == null)
+                CreateService();
+            if (Terms.Count == 0)
+                GetTerms();
+
             foreach (DataRow drow in dtVendors.Rows)
             {
                 Vendor vendor = new Vendor();
                 vendor.DisplayName = (string)drow["vendor_name"];
+                vendor.CompanyName = (string)drow["vendor_name"];
+
                 vendor.BillAddr = new PhysicalAddress()
                 {
                     Line1 = CheckNullDBString(drow["vendor_address_line1"]),
@@ -758,26 +1018,27 @@ namespace TSI.QBInterface
                 {
                     FreeFormNumber = FormatPhoneNumber(CheckNullDBString(drow["vendor_fax"]))
                 };
+
                 if (drow["vendor_tax_id"] != DBNull.Value)
                     vendor.TaxIdentifier = (string)drow["vendor_tax_id"];
+
                 if (drow["vendor_account_number"] != DBNull.Value)
                     vendor.AcctNum = (string)drow["vendor_account_number"];
-                string salesTypeRef = string.Empty;
-                if (CheckNullDBString(drow["payment_term_erp_ID"]).Trim() == "Net Due Upon Receipt")
-                    salesTypeRef = "41";
-                else if (CheckNullDBString(drow["payment_term_erp_ID"]).Trim() == "Net 15")
-                    salesTypeRef = "35";
-                else if (CheckNullDBString(drow["payment_term_erp_ID"]).Trim() == "50%Deposit/Net 15")
-                    salesTypeRef = "59";
-                else if (CheckNullDBString(drow["payment_term_erp_ID"]).Trim() == "50%Deposit/Net Due")
-                    salesTypeRef = "60";
-                if (!string.IsNullOrEmpty(salesTypeRef))
+
+                if (drow["vendor_notes"] != DBNull.Value)
+                    vendor.Notes = (string)drow["vendor_notes"];
+
+
+                vendor.TermRef = new ReferenceType();
+                vendor.TermRef.name = "Net Due Upon Receipt";
+
+                if (!Terms.ContainsKey(vendor.TermRef.name))
                 {
-                    vendor.TermRef = new ReferenceType()
-                    {
-                        Value = salesTypeRef
-                    };
+                    return "Payment Terms not in Terms collection:" + vendor.TermRef.name;
                 }
+
+                vendor.TermRef.Value = Terms[vendor.TermRef.name];
+                vendor.TermRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Term);
 
                 services.Add(vendor);
             }
@@ -915,6 +1176,27 @@ namespace TSI.QBInterface
 
         }
 
+        public void GetVendors()
+        {
+
+            if (services == null)
+                CreateService();
+            Vendors.Clear();
+            Vendor vendorRef = new Vendor();
+            List<Vendor> VendorRefs = services.FindAll(vendorRef).ToList<Vendor>();
+
+            foreach (Vendor vendorRef1 in VendorRefs)
+            {
+                string vendorName = string.Empty;
+                if (string.IsNullOrEmpty(vendorRef1.CompanyName))
+                    vendorName = vendorRef1.DisplayName;
+                else
+                    vendorName = vendorRef1.CompanyName;
+                Vendors.Add(vendorName, vendorRef1.Id);
+            }
+
+        }
+
         private string CheckNullDBString(object datacol)
         {
             string dbString = string.Empty;
@@ -935,3 +1217,4 @@ namespace TSI.QBInterface
         }
     }
 }
+

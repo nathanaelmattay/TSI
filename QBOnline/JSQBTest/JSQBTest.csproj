@@ -80,6 +80,7 @@
     <Reference Include="IppDotNetSdkForQuickBooksApiV3, Version=10.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\QBOnline\packages\IppDotNetSdkForQuickBooksApiV3.10.0.0.3\lib\net472\IppDotNetSdkForQuickBooksApiV3.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Scaffolding.12.0, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Azure.Documents.Client, Version=2.10.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\QBOnline\packages\Microsoft.Azure.DocumentDB.2.10.0\lib\net461\Microsoft.Azure.Documents.Client.dll</HintPath>
     </Reference>
