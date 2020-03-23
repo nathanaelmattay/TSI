@@ -47,6 +47,7 @@ namespace TSI.QBInterface
         private static Dictionary<string, string> Departments = new Dictionary<string, string>();
         private static Dictionary<string, string> CustomerTypes = new Dictionary<string, string>();
         private static Dictionary<string, string> Vendors = new Dictionary<string, string>();
+        private static Dictionary<string, Account> Accounts = new Dictionary<string, Account>();
         //private string authorizeUrl;
         public QBMethods()
         {
@@ -210,6 +211,8 @@ namespace TSI.QBInterface
                 GetTerms();
             if (Vendors.Count == 0)
                 GetVendors();
+            if (Accounts.Count == 0)
+                GetAccounts();
 
             Bill bill = new Bill();
             //bill.DocNumber = Guid.NewGuid().ToString("N").Substring(0, 10);
@@ -219,7 +222,7 @@ namespace TSI.QBInterface
             {
                 type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account),
                 name = "Account Payable",
-                Value = string.Concat((string)dtBill.Rows[0]["BillLineGLCode"])
+                Value = "379"
             };
             bill.VendorRef = new ReferenceType();
             bill.VendorRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Vendor);
@@ -252,9 +255,20 @@ namespace TSI.QBInterface
                 line1.Amount = (decimal)poItemrow["BillLineAmount"];
                 line1.AmountSpecified = true;
                 line1.Description = poItemrow["BillLineDescription"].ToString();
-                
+                line1.DetailType = LineDetailTypeEnum.AccountBasedExpenseLineDetail;
+                line1.DetailTypeSpecified = true;
+              
                 AccountBasedExpenseLineDetail lineDetail = new AccountBasedExpenseLineDetail();
                 lineDetail.BillableStatus = BillableStatusEnum.Billable;
+
+               
+                lineDetail.AccountRef = new ReferenceType();
+                lineDetail.AccountRef.name = Accounts[(string)poItemrow["BillLineGLCode"]].Name;
+                
+                lineDetail.AccountRef.Value = Accounts[(string)poItemrow["BillLineGLCode"]].Id;
+                lineDetail.AccountRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account);
+
+
                 lineDetail.ClassRef = new ReferenceType
                 {
 
@@ -264,7 +278,7 @@ namespace TSI.QBInterface
 
                 };
 
-
+                line1.AnyIntuitObject = lineDetail;
 
 
 
@@ -318,6 +332,7 @@ namespace TSI.QBInterface
                 GetTerms();
             if (Departments.Count == 0)
                 GetDepartments();
+            
 
             Invoice invoice = new Invoice();
             //invoice.TemplateRef.name = "Trinity Stairs Invoice";
@@ -1193,6 +1208,23 @@ namespace TSI.QBInterface
                 else
                     vendorName = vendorRef1.CompanyName;
                 Vendors.Add(vendorName, vendorRef1.Id);
+            }
+
+        }
+
+        public void GetAccounts()
+        {
+
+            if (services == null)
+                CreateService();
+            Accounts.Clear();
+            Account accountRef = new Account();
+            List<Account> AccountRefs = services.FindAll(accountRef).ToList<Account>();
+
+            foreach (Account accountRef1 in AccountRefs)
+            {
+                if (!string.IsNullOrEmpty(accountRef1.AcctNum))
+                  Accounts.Add(accountRef1.AcctNum, accountRef1);
             }
 
         }
