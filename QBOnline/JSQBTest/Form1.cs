@@ -21,6 +21,10 @@ using Intuit.Ipp.ReportService;
 using System.Diagnostics;
 using System.Web.UI;
 using Intuit.Ipp.Core.Configuration;
+using System.Net;
+using System.Web;
+
+
 
 namespace JSQBTest
 {
@@ -180,7 +184,7 @@ namespace JSQBTest
                 int vInt;
                 if (!int.TryParse(txtNunber.Text, out vInt))
                     return;
-                command.CommandText = "Select * from Vendors2 where vendor_id = " + vInt.ToString();
+                command.CommandText = "Select * from Vendors where vendor_id = " + vInt.ToString();
                 command.CommandType = CommandType.Text;
                 command.Connection.Open();
 
@@ -191,7 +195,7 @@ namespace JSQBTest
                
 
                 string returnString = string.Empty;
-                // returnString = qbMethods.CreateNewVendor(dtVendors);
+                returnString = qbMethods.AddVendor(dtVendors);
 
                 textBox1.Text = returnString;
 
@@ -424,8 +428,14 @@ namespace JSQBTest
             scopes.Add(OidcScopes.Accounting);
             var authorizeUrl = oauthClient.GetAuthorizationURL(scopes);
             ProcessStartInfo sInfo = new ProcessStartInfo(authorizeUrl);
+            
             Process.Start(sInfo);
+         
         }
+
+
+
+    
 
         private void button13_Click(object sender, EventArgs e)
         {
@@ -433,6 +443,45 @@ namespace JSQBTest
             string Inv = qbMethods.GetInvoice(txtNunber.Text);
 
             textBox1.Text = Inv;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            CheckTokens();
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["JobScheduler2007"].ConnectionString);
+            string _sql = "dbo.tspVendorBillsAndLines_GetByVendorBillID";
+            SqlCommand command = new SqlCommand(_sql, connection);
+            try
+            {
+                int vInt;
+                if (!int.TryParse(txtNunber.Text, out vInt))
+                    return;
+
+                DataTable dt = new DataTable("dtBill");
+                command.CommandType = CommandType.StoredProcedure;
+                connection.Open();
+                command.Parameters.Add("@VendorBillID", SqlDbType.Int).Value = vInt;
+                dt.Load(command.ExecuteReader());
+
+
+
+                string returnString = string.Empty;
+
+                returnString = qbMethods.CreatePayablesBill(dt);
+
+                textBox1.Text = returnString;
+
+                command.Connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+            finally
+            {
+                command.Connection.Close();
+            }
+
         }
     }
 }

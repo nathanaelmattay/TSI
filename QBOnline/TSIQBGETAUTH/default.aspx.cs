@@ -15,6 +15,9 @@ namespace TSIQBGETAUTH
 
     public partial class _default : System.Web.UI.Page
     {
+        QBMethods qbMethods;
+
+
         private string accessToken = string.Empty;
         private string refreshToken = string.Empty;
         static string redirectURI = ConfigurationManager.AppSettings["redirectURI"];
@@ -22,9 +25,12 @@ namespace TSIQBGETAUTH
         static string clientSecret = ConfigurationManager.AppSettings["clientSecret"];
         static string appEnvironment = ConfigurationManager.AppSettings["appEnvironment"];
         static string authCode;
-        protected void Page_Load(object sender, EventArgs e)
+       
+        
+        
+        protected async void Page_Load(object sender, EventArgs e)
         {
-            
+            //await (ConnecttoQBAuth);
             if (Request.QueryString["code"] != null)
             {
                 authCode = Request.QueryString["code"];
