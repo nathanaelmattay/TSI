@@ -213,10 +213,11 @@ namespace TSI.QBInterface
                 GetVendors();
             if (Accounts.Count == 0)
                 GetAccounts();
+            if (Departments.Count == 0)
+                GetDepartments();
 
             Bill bill = new Bill();
-            //bill.DocNumber = Guid.NewGuid().ToString("N").Substring(0, 10);
-            //bill.TxnStatus = "Payable";
+
 
             bill.APAccountRef = new ReferenceType()
             {
@@ -224,28 +225,33 @@ namespace TSI.QBInterface
                 name = "Account Payable",
                 Value = "379"
             };
+
+      
+
+            bill.DepartmentRef = new ReferenceType();
+
+
+            bill.DepartmentRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Department);
+            bill.DepartmentRef.name = (string)dtBill.Rows[0]["RegionName"];
+            bill.DepartmentRef.Value = Departments[(string)dtBill.Rows[0]["RegionName"]];
+            
+
             bill.VendorRef = new ReferenceType();
             bill.VendorRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Vendor);
+
+            if (!Vendors.ContainsKey((string)dtBill.Rows[0]["VendorName"]))
+                return "Vendor Bill not loaded: Vendor not in QB";
+
             bill.VendorRef.name = (string)dtBill.Rows[0]["VendorName"];
             bill.VendorRef.Value =Vendors[(string)dtBill.Rows[0]["VendorName"]];
-
+            bill.DocNumber = ((string)dtBill.Rows[0]["VendorInvoiceNumber"]);
+         
 
             bill.TxnDate = (DateTime)dtBill.Rows[0]["BillDate"];
             bill.TxnDateSpecified = true;
             bill.DueDate = (DateTime)dtBill.Rows[0]["BillDate"];
             bill.DueDateSpecified = true;
-            //bill.Memo((string)dtBill.Rows[0]["VendorBillMemo"]);
-            //bill.DocNumber((string)dtBill.Rows[0]["VendorInvoiceNumber"]);
-
-            //bill.TxnTaxDetail = new TxnTaxDetail();
-            //bill.TxnTaxDetail.DefaultTaxCodeRef = new ReferenceType()
-            //{
-            //    Value = "QB:123",
-            //    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.TaxCode),
-            //    name = "TaxCodeName"
-            //};
-            //bill.TxnTaxDetail.TotalTax = new Decimal(0.00);
-            //bill.TxnTaxDetail.TotalTaxSpecified = true;
+           
 
             Line[] lines = new Line[dtBill.Rows.Count];
             int billLineCnt = 0;
@@ -279,33 +285,6 @@ namespace TSI.QBInterface
                 };
 
                 line1.AnyIntuitObject = lineDetail;
-
-
-
-
-
-
-                //line1. = poItemrow["POLinePrintOrder"].ToString();
-                //line1.Id = (billLineCnt + 1).ToString();
-
-                //PurchaseOrderItemLineDetail purchaseOrderItemLineDetail = new PurchaseOrderItemLineDetail();
-                //purchaseOrderItemLineDetail.Qty = (decimal)poItemrow["POLineQty"];
-                //purchaseOrderItemLineDetail.QtySpecified = true;
-                //purchaseOrderItemLineDetail.AnyIntuitObject = (decimal)(poItemrow["POLinePrice"]);
-                //purchaseOrderItemLineDetail.ItemElementName = ItemChoiceType.UnitPrice;
-                //line1.AnyIntuitObject = purchaseOrderItemLineDetail;
-
-                //AccountBasedExpenseLineDetail accountBasedExpenseLineDetail = new AccountBasedExpenseLineDetail();
-                //accountBasedExpenseLineDetail.AccountRef = new ReferenceType()
-                //{
-                //    Value = poItemrow["AccountNumber"].ToString()
-                //};
-                //accountBasedExpenseLineDetail.ClassRef = new ReferenceType()
-                //{
-                //    Value = poItemrow["Class"].ToString()
-                //};
-                //accountBasedExpenseLineDetail.BillableStatus = BillableStatusEnum.Billable;
-                //line1.AnyIntuitObject = accountBasedExpenseLineDetail;
 
                 lines[billLineCnt] = line1;
                 billLineCnt++;
