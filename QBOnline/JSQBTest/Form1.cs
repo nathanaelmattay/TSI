@@ -300,13 +300,35 @@ namespace JSQBTest
             CheckTokens();
             try
             {
-
-
+                string[] parms = txtNunber.Text.Split(';');
+                if (parms.Length < 5)
+                    MessageBox.Show("5 Parms required for Journal Entry");
                 
+                DataTable dtCreditItems = new DataTable("CreditItems");
+                dtCreditItems.Columns.Add("GLAccount", typeof(string));
+                dtCreditItems.Columns.Add("Amount", typeof(decimal));
+                dtCreditItems.Columns.Add("ClassName", typeof(string));
+                dtCreditItems.Columns.Add("Memo", typeof(string));
+                dtCreditItems.TableName = "CreditItems";
 
-                string returnString = string.Empty;
-                //returnString = qbMethods.CreateJournalEntry("Test Job!", "Frisco", "1210", 
-                //    "5010", Convert.ToDecimal(this.txtNunber.Text));
+                dtCreditItems.Rows.Add(parms[0], parms[1], parms[2], parms[3]);
+
+
+
+                DataTable dtdebitItems = new DataTable("DebitItems");
+                dtdebitItems.Columns.Add("GLAccount", typeof(string));
+                dtdebitItems.Columns.Add("Amount", typeof(decimal));
+                dtdebitItems.Columns.Add("ClassName", typeof(string));
+                dtdebitItems.Columns.Add("Memo", typeof(string));
+
+                dtdebitItems.Rows.Add(parms[4].Trim(), parms[1], parms[2], parms[3]);
+
+
+
+
+
+                string returnString = qbMethods.CreateJournalEntry(dtCreditItems, dtdebitItems, DateTime.Today);
+                    
 
                 textBox1.Text = returnString;
 

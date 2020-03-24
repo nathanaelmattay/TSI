@@ -203,12 +203,8 @@ namespace TSI.QBInterface
 
             if (services == null)
                 CreateService();
-            if (Items.Count == 0)
-                GetProductAndServicesPrefs();
             if (Classes.Count == 0)
                 GetClasses();
-            if (Terms.Count == 0)
-                GetTerms();
             if (Vendors.Count == 0)
                 GetVendors();
             if (Accounts.Count == 0)
@@ -294,8 +290,6 @@ namespace TSI.QBInterface
             Bill resultBill = services.Add(bill) as Bill;
             return "Vendor Bill Loaded";
         }
-
-
 
 
         public string CreateReceivablesInvoice(DataTable dtInvoice)
@@ -535,6 +529,7 @@ namespace TSI.QBInterface
                 GetTerms();
             if (Departments.Count == 0)
                 GetDepartments();
+
 
             CreditMemo creditMemo = new CreditMemo();
             //invoice.TemplateRef.name = "Trinity Stairs Invoice";
@@ -817,14 +812,17 @@ namespace TSI.QBInterface
             //CreditMemo resultCreditMemo = services.Add(creditMemo) as CreditMemo;
         }
 
-        /// <summary>
-        /// CReate Journal Entry
-        /// </summary>
-        /// <param name="creditDT"></param>
-        /// <param name="debitDT"></param>
-        /// <param name="transDate"></param>
-        public void CreateJournalEntry(DataTable creditDT, DataTable debitDT, DateTime transDate)
+
+        public string CreateJournalEntry(DataTable creditDT, DataTable debitDT, DateTime transDate)
         {
+            if (services == null)
+                CreateService();
+            if (Classes.Count == 0)
+                GetClasses();
+            if (Accounts.Count == 0)
+                GetAccounts();
+
+
             JournalEntry journalEntry = new JournalEntry();
             journalEntry.Adjustment = true;
             journalEntry.AdjustmentSpecified = true;
@@ -840,7 +838,7 @@ namespace TSI.QBInterface
             foreach (DataRow creditRow in creditDT.Rows)
             {
                 Line creditLine = new Line();
-                creditLine.Description = ((string)creditRow["Memo"]);
+                creditLine.Description = creditRow["Memo"].ToString();
                 creditLine.Amount = decimal.Round((decimal)creditRow["Amount"], 2);
                 creditLine.AmountSpecified = true;
                 creditLine.DetailType = LineDetailTypeEnum.JournalEntryLineDetail;
@@ -849,24 +847,29 @@ namespace TSI.QBInterface
                 journalEntryLineDetailCredit.PostingType = PostingTypeEnum.Credit;
                 journalEntryLineDetailCredit.PostingTypeSpecified = true;
                 //Account assetAccount = Helper.FindOrAddAccount(servicecontext, AccountTypeEnum.OtherCurrentAsset, AccountClassificationEnum.Asset);
-                journalEntryLineDetailCredit.AccountRef = new ReferenceType()
-                {
-                    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account),
-                    name = (string)creditRow["GLAccount"]
-                    //Value = assetAccount.Id
-                };
+               
+                journalEntryLineDetailCredit.AccountRef = new ReferenceType();
+                journalEntryLineDetailCredit.AccountRef.name = Accounts[(string)creditRow["GLAccount"]].Name;
+                journalEntryLineDetailCredit.AccountRef.Value = Accounts[(string)creditRow["GLAccount"]].Id;
+                journalEntryLineDetailCredit.AccountRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account);
+
+                
+                
                 journalEntryLineDetailCredit.ClassRef = new ReferenceType()
                 {
                     type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
-                    name = ((string)creditRow["ClassName"])
+                    name = (string)creditRow["ClassName"],
+                    Value = Classes[(string)creditRow["ClassName"]]
                 };
+
+
                 creditLine.AnyIntuitObject = journalEntryLineDetailCredit;
                 lineList.Add(creditLine);
             }
             foreach (DataRow debitRow in debitDT.Rows)
             {
                 Line debitLine = new Line();
-                debitLine.Description = ((string)debitRow["Memo"]);
+                debitLine.Description = debitRow["Memo"].ToString();
                 debitLine.Amount = decimal.Round((decimal)debitRow["Amount"], 2);
                 debitLine.AmountSpecified = true;
                 debitLine.DetailType = LineDetailTypeEnum.JournalEntryLineDetail;
@@ -874,17 +877,19 @@ namespace TSI.QBInterface
                 JournalEntryLineDetail journalEntryLineDetail = new JournalEntryLineDetail();
                 journalEntryLineDetail.PostingType = PostingTypeEnum.Debit;
                 journalEntryLineDetail.PostingTypeSpecified = true;
-                Account expenseAccount = Helper.FindOrAddAccount(servicecontext, AccountTypeEnum.Expense, AccountClassificationEnum.Expense);
-                journalEntryLineDetail.AccountRef = new ReferenceType()
-                {
-                    type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account),
-                    name = (string)debitRow["GLAccount"]
-                    //Value = expenseAccount.Id 
-                };
+                //Account expenseAccount = Helper.FindOrAddAccount(servicecontext, AccountTypeEnum.Expense, AccountClassificationEnum.Expense);
+               
+                journalEntryLineDetail.AccountRef = new ReferenceType();
+                journalEntryLineDetail.AccountRef.name = Accounts[(string)debitRow["GLAccount"]].Name;
+                journalEntryLineDetail.AccountRef.Value = Accounts[(string)debitRow["GLAccount"]].Id;
+                journalEntryLineDetail.AccountRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account);
+                
                 journalEntryLineDetail.ClassRef = new ReferenceType()
+                
                 {
                     type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
-                    name = ((string)debitRow["ClassName"])
+                    name = (string)debitRow["ClassName"],
+                    Value = Classes[(string)debitRow["ClassName"]]
                 };
                 debitLine.AnyIntuitObject = journalEntryLineDetail;
                 lineList.Add(debitLine);
@@ -892,6 +897,7 @@ namespace TSI.QBInterface
 
             journalEntry.Line = lineList.ToArray();
             services.Add(journalEntry);
+            return "Journal Entry Added";
         }
 
 

@@ -116,10 +116,10 @@
             // 
             // txtNunber
             // 
-            this.txtNunber.Location = new System.Drawing.Point(524, 115);
+            this.txtNunber.Location = new System.Drawing.Point(221, 156);
             this.txtNunber.Margin = new System.Windows.Forms.Padding(2);
             this.txtNunber.Name = "txtNunber";
-            this.txtNunber.Size = new System.Drawing.Size(182, 20);
+            this.txtNunber.Size = new System.Drawing.Size(631, 20);
             this.txtNunber.TabIndex = 7;
             this.txtNunber.TextChanged += new System.EventHandler(this.txtNunber_TextChanged);
             // 
@@ -208,7 +208,7 @@
             this.textBox2.Location = new System.Drawing.Point(80, 226);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 20);
+            this.textBox2.Size = new System.Drawing.Size(278, 20);
             this.textBox2.TabIndex = 15;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
