@@ -11,7 +11,7 @@ using Intuit.Ipp.Security;
 using Intuit.Ipp.DataService;
 using System.Diagnostics;
 using System.Data.SqlClient;
-
+using System.Threading.Tasks;
 
 namespace TSI.QBInterface
 {
@@ -200,7 +200,7 @@ namespace TSI.QBInterface
 
         public string CreatePayablesBill(DataTable dtBill)
         {
-
+            RefreshTokens();
             if (services == null)
                 CreateService();
             if (Classes.Count == 0)
@@ -294,7 +294,7 @@ namespace TSI.QBInterface
 
         public string CreateReceivablesInvoice(DataTable dtInvoice)
         {
-
+            RefreshTokens();
             if (services == null)
                 CreateService();
             if (Items.Count == 0)
@@ -519,6 +519,7 @@ namespace TSI.QBInterface
 
         public string CreateReceivablesCreditMemo(DataTable dtInvoice)
         {
+            RefreshTokens();
             if (services == null)
                 CreateService();
             if (Items.Count == 0)
@@ -815,6 +816,7 @@ namespace TSI.QBInterface
 
         public string CreateJournalEntry(DataTable creditDT, DataTable debitDT, DateTime transDate)
         {
+            RefreshTokens();
             if (services == null)
                 CreateService();
             if (Classes.Count == 0)
@@ -903,6 +905,7 @@ namespace TSI.QBInterface
 
         public string AddCustomer(DataTable dtCustomers)
         {
+            RefreshTokens();
             if (services == null)
                 CreateService();
             if (Terms.Count == 0)
@@ -982,6 +985,7 @@ namespace TSI.QBInterface
 
         public string AddVendor(DataTable dtVendors)
         {
+            RefreshTokens();
             if (services == null)
                 CreateService();
             if (Terms.Count == 0)
@@ -1047,6 +1051,7 @@ namespace TSI.QBInterface
 
         public string GetCustomer(string customerID)
         {
+            RefreshTokens();
             if (services == null)
                 CreateService();
             Customer customer = new Customer();
@@ -1057,6 +1062,7 @@ namespace TSI.QBInterface
 
         public string GetInvoice(string invoiceID)
         {
+            RefreshTokens();
             if (Invoices.Count == 0)
                 GetInvoiceList();
             Invoice thisInv = Invoices[invoiceID];
@@ -1065,6 +1071,7 @@ namespace TSI.QBInterface
 
         public List<string> GetCustomerList()
         {
+            RefreshTokens();
             CustomerIDs.Clear();
             if (services == null)
                 CreateService();
@@ -1084,6 +1091,7 @@ namespace TSI.QBInterface
 
         public List<string> GetInvoiceList()
         {
+            RefreshTokens();
             if (services == null)
                 CreateService();
             List<string> invoicesdata = new List<string>();
@@ -1101,9 +1109,8 @@ namespace TSI.QBInterface
             return invoicesdata;
         }
 
-        public void GetProductAndServicesPrefs()
+        private void GetProductAndServicesPrefs()
         {
-
             if (services == null)
                 CreateService();
             Items.Clear();
@@ -1116,7 +1123,7 @@ namespace TSI.QBInterface
 
         }
 
-        public void GetClasses()
+        private void GetClasses()
         {
 
             if (services == null)
@@ -1131,7 +1138,7 @@ namespace TSI.QBInterface
 
         }
 
-        public void GetTerms()
+        private void GetTerms()
         {
 
             if (services == null)
@@ -1146,7 +1153,7 @@ namespace TSI.QBInterface
 
         }
 
-        public void GetDepartments()
+        private void GetDepartments()
         {
 
             if (services == null)
@@ -1161,7 +1168,7 @@ namespace TSI.QBInterface
 
         }
 
-        public void GetCustomerTypes()
+        private void GetCustomerTypes()
         {
 
             if (services == null)
@@ -1176,7 +1183,7 @@ namespace TSI.QBInterface
 
         }
 
-        public void GetVendors()
+        private void GetVendors()
         {
 
             if (services == null)
@@ -1197,7 +1204,7 @@ namespace TSI.QBInterface
 
         }
 
-        public void GetAccounts()
+        private void GetAccounts()
         {
 
             if (services == null)
@@ -1231,6 +1238,27 @@ namespace TSI.QBInterface
             else
                 phoneString = phoneNumber;
             return phoneString.Trim();
+        }
+
+        private void RefreshTokens()
+        {
+            Task<int> task = GetRefreshTokens();
+
+
+        }
+
+        private static async Task<int> GetRefreshTokens()
+        {
+            var tokenResp = await oauthClient.RefreshTokenAsync(RefreshToken);
+            if (tokenResp.AccessToken != null && tokenResp.RefreshToken != null)
+            {
+                AccessToken = tokenResp.AccessToken;
+                RefreshToken = tokenResp.RefreshToken;
+
+
+            }
+            UpdateSecurityTokensInDB();
+            return 1;
         }
     }
 }

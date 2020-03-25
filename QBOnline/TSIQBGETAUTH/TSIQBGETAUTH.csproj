@@ -233,6 +233,7 @@
       <HintPath>..\QBOnline\packages\System.Security.Principal.Windows.4.6.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -243,6 +244,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -289,6 +291,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JSQBTest\JSQBTest.csproj">
+      <Project>{1ce54b32-93aa-41e6-8368-68c1ed1f8fad}</Project>
+      <Name>JSQBTest</Name>
+    </ProjectReference>
     <ProjectReference Include="..\QBOnline\QBOnline.csproj">
       <Project>{f156d782-17e1-4007-8447-8843c9548ef6}</Project>
       <Name>QBOnline</Name>

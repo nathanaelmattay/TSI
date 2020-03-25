@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="TSIQBGETAUTH._default" %>
+﻿<%@ Page Language="C#" Async="true" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="TSIQBGETAUTH._default" %>
 
 <!DOCTYPE html>
 

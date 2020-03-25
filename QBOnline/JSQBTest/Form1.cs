@@ -69,7 +69,7 @@ namespace JSQBTest
 
                 dtCustomers.Load(command.ExecuteReader());
 
-                
+
 
                 string returnString = string.Empty;
                 //returnString = qbMethods.AddCustomer((dtCustomers));
@@ -131,7 +131,7 @@ namespace JSQBTest
 
                 dtVendors.Load(command.ExecuteReader());
 
-                
+
 
                 string returnString = string.Empty;
                 //  returnString = qbMethods.CreateNewVendor(dtVendors);
@@ -192,7 +192,7 @@ namespace JSQBTest
 
                 dtVendors.Load(command.ExecuteReader());
 
-               
+
 
                 string returnString = string.Empty;
                 returnString = qbMethods.AddVendor(dtVendors);
@@ -237,7 +237,7 @@ namespace JSQBTest
 
                 dtCustomers.Load(command.ExecuteReader());
 
-                
+
 
                 string returnString = string.Empty;
 
@@ -275,7 +275,7 @@ namespace JSQBTest
                 command.Parameters.Add("@InvoiceID", SqlDbType.Int).Value = vInt;
                 dt.Load(command.ExecuteReader());
 
-                
+
 
                 string returnString = string.Empty;
 
@@ -303,7 +303,7 @@ namespace JSQBTest
                 string[] parms = txtNunber.Text.Split(';');
                 if (parms.Length < 5)
                     MessageBox.Show("5 Parms required for Journal Entry");
-                
+
                 DataTable dtCreditItems = new DataTable("CreditItems");
                 dtCreditItems.Columns.Add("GLAccount", typeof(string));
                 dtCreditItems.Columns.Add("Amount", typeof(decimal));
@@ -328,7 +328,7 @@ namespace JSQBTest
 
 
                 string returnString = qbMethods.CreateJournalEntry(dtCreditItems, dtdebitItems, DateTime.Today);
-                    
+
 
                 textBox1.Text = returnString;
 
@@ -387,7 +387,7 @@ namespace JSQBTest
 
 
 
-            
+
 
         }
 
@@ -404,10 +404,9 @@ namespace JSQBTest
             Task<int> task = GetTokens();
             textBox1.Text = "Tokens Exchanged! You are Authenticated.";
 
-            
+
         }
         private static async Task<int> GetTokens()
-
         {
             QBMethods.UpdateSecurityToAuthenticate(19);
             OAuth2Client oauth2Client = new OAuth2Client(clientID, clientSecret, redirectURI, appEnvironment); // environment is “sandbox” or “production”
@@ -421,7 +420,7 @@ namespace JSQBTest
             QBMethods.RefreshToken = tokenResponse.RefreshToken;
             if (accessToken != string.Empty)
             {
-             QBMethods.UpdateSecurityTokensInDB();
+                QBMethods.UpdateSecurityTokensInDB();
             }
 
             QBMethods.AccessToken = accessToken;
@@ -450,14 +449,14 @@ namespace JSQBTest
             scopes.Add(OidcScopes.Accounting);
             var authorizeUrl = oauthClient.GetAuthorizationURL(scopes);
             ProcessStartInfo sInfo = new ProcessStartInfo(authorizeUrl);
-            
+
             Process.Start(sInfo);
-         
+
         }
 
 
 
-    
+
 
         private void button13_Click(object sender, EventArgs e)
         {

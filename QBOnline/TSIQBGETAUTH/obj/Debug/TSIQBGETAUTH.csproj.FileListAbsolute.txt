@@ -561,3 +561,7 @@ C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\obj\Debug\TSIQBGETAUTH
 C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\obj\Debug\TSIQBGETAUTH.csproj.CopyComplete
 C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\obj\Debug\TSIQBGETAUTH.dll
 C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\obj\Debug\TSIQBGETAUTH.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\bin\JSQBTest.exe
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\bin\JSQBTest.pdb
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\bin\JSQBTest.exe.config
+C:\Users\markm\Documents\GitHub\TSI\QBOnline\TSIQBGETAUTH\bin\System.Threading.Tasks.Dataflow.dll
