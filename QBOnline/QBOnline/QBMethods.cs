@@ -12,6 +12,8 @@ using Intuit.Ipp.DataService;
 using System.Diagnostics;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
+using System.Web;
+using System.Threading;
 
 namespace TSI.QBInterface
 {
@@ -36,9 +38,10 @@ namespace TSI.QBInterface
         public static ServiceContext servicecontext;
         public static DataService services;
         public static OAuth2Client oauthClient = new OAuth2Client(clientID, clientSecret, redirectURI, appEnvironment);
-
+        
         public static string AccessToken;
         public static string RefreshToken;
+        private static TokenResponse tokenResp;
         private static Dictionary<string, string> CustomerIDs = new Dictionary<string, string>();
         private static Dictionary<string, Invoice> Invoices = new Dictionary<string, Invoice>();
         private static Dictionary<string, string> Items = new Dictionary<string, string>();
@@ -222,7 +225,7 @@ namespace TSI.QBInterface
                 Value = "379"
             };
 
-      
+
 
             bill.DepartmentRef = new ReferenceType();
 
@@ -230,7 +233,7 @@ namespace TSI.QBInterface
             bill.DepartmentRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Department);
             bill.DepartmentRef.name = (string)dtBill.Rows[0]["RegionName"];
             bill.DepartmentRef.Value = Departments[(string)dtBill.Rows[0]["RegionName"]];
-            
+
 
             bill.VendorRef = new ReferenceType();
             bill.VendorRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Vendor);
@@ -239,15 +242,15 @@ namespace TSI.QBInterface
                 return "Vendor Bill not loaded: Vendor not in QB";
 
             bill.VendorRef.name = (string)dtBill.Rows[0]["VendorName"];
-            bill.VendorRef.Value =Vendors[(string)dtBill.Rows[0]["VendorName"]];
+            bill.VendorRef.Value = Vendors[(string)dtBill.Rows[0]["VendorName"]];
             bill.DocNumber = ((string)dtBill.Rows[0]["VendorInvoiceNumber"]);
-         
+
 
             bill.TxnDate = (DateTime)dtBill.Rows[0]["BillDate"];
             bill.TxnDateSpecified = true;
             bill.DueDate = (DateTime)dtBill.Rows[0]["BillDate"];
             bill.DueDateSpecified = true;
-           
+
 
             Line[] lines = new Line[dtBill.Rows.Count];
             int billLineCnt = 0;
@@ -259,14 +262,14 @@ namespace TSI.QBInterface
                 line1.Description = poItemrow["BillLineDescription"].ToString();
                 line1.DetailType = LineDetailTypeEnum.AccountBasedExpenseLineDetail;
                 line1.DetailTypeSpecified = true;
-              
+
                 AccountBasedExpenseLineDetail lineDetail = new AccountBasedExpenseLineDetail();
                 lineDetail.BillableStatus = BillableStatusEnum.Billable;
 
-               
+
                 lineDetail.AccountRef = new ReferenceType();
                 lineDetail.AccountRef.name = Accounts[(string)poItemrow["BillLineGLCode"]].Name;
-                
+
                 lineDetail.AccountRef.Value = Accounts[(string)poItemrow["BillLineGLCode"]].Id;
                 lineDetail.AccountRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account);
 
@@ -305,7 +308,7 @@ namespace TSI.QBInterface
                 GetTerms();
             if (Departments.Count == 0)
                 GetDepartments();
-            
+
 
             Invoice invoice = new Invoice();
             //invoice.TemplateRef.name = "Trinity Stairs Invoice";
@@ -849,14 +852,14 @@ namespace TSI.QBInterface
                 journalEntryLineDetailCredit.PostingType = PostingTypeEnum.Credit;
                 journalEntryLineDetailCredit.PostingTypeSpecified = true;
                 //Account assetAccount = Helper.FindOrAddAccount(servicecontext, AccountTypeEnum.OtherCurrentAsset, AccountClassificationEnum.Asset);
-               
+
                 journalEntryLineDetailCredit.AccountRef = new ReferenceType();
                 journalEntryLineDetailCredit.AccountRef.name = Accounts[(string)creditRow["GLAccount"]].Name;
                 journalEntryLineDetailCredit.AccountRef.Value = Accounts[(string)creditRow["GLAccount"]].Id;
                 journalEntryLineDetailCredit.AccountRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account);
 
-                
-                
+
+
                 journalEntryLineDetailCredit.ClassRef = new ReferenceType()
                 {
                     type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
@@ -880,14 +883,14 @@ namespace TSI.QBInterface
                 journalEntryLineDetail.PostingType = PostingTypeEnum.Debit;
                 journalEntryLineDetail.PostingTypeSpecified = true;
                 //Account expenseAccount = Helper.FindOrAddAccount(servicecontext, AccountTypeEnum.Expense, AccountClassificationEnum.Expense);
-               
+
                 journalEntryLineDetail.AccountRef = new ReferenceType();
                 journalEntryLineDetail.AccountRef.name = Accounts[(string)debitRow["GLAccount"]].Name;
                 journalEntryLineDetail.AccountRef.Value = Accounts[(string)debitRow["GLAccount"]].Id;
                 journalEntryLineDetail.AccountRef.type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Account);
-                
+
                 journalEntryLineDetail.ClassRef = new ReferenceType()
-                
+
                 {
                     type = Enum.GetName(typeof(objectNameEnumType), objectNameEnumType.Class),
                     name = (string)debitRow["ClassName"],
@@ -1216,7 +1219,7 @@ namespace TSI.QBInterface
             foreach (Account accountRef1 in AccountRefs)
             {
                 if (!string.IsNullOrEmpty(accountRef1.AcctNum))
-                  Accounts.Add(accountRef1.AcctNum, accountRef1);
+                    Accounts.Add(accountRef1.AcctNum, accountRef1);
             }
 
         }
@@ -1240,26 +1243,25 @@ namespace TSI.QBInterface
             return phoneString.Trim();
         }
 
-        private void RefreshTokens()
+        public static void RefreshTokens()
         {
-            Task<int> task = GetRefreshTokens();
-
-
-        }
-
-        private static async Task<int> GetRefreshTokens()
-        {
-            var tokenResp = await oauthClient.RefreshTokenAsync(RefreshToken);
-            if (tokenResp.AccessToken != null && tokenResp.RefreshToken != null)
+            
+            Task<TokenResponse> task = oauthClient.RefreshTokenAsync(RefreshToken);
+            TokenResponse tokenResponse2 = task.Result;
+            if (tokenResponse2.AccessToken != null && tokenResponse2.RefreshToken != null)
             {
-                AccessToken = tokenResp.AccessToken;
-                RefreshToken = tokenResp.RefreshToken;
-
+                AccessToken = tokenResponse2.AccessToken;
+                RefreshToken = tokenResponse2.RefreshToken;
+                UpdateSecurityTokensInDB();
 
             }
-            UpdateSecurityTokensInDB();
-            return 1;
+
+            
         }
+
     }
 }
+    
+
+
 

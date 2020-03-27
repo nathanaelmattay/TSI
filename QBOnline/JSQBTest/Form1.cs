@@ -19,10 +19,11 @@ using Intuit.Ipp.Security;
 using Intuit.Ipp.Exception;
 using Intuit.Ipp.ReportService;
 using System.Diagnostics;
-using System.Web.UI;
+using System.Web;
 using Intuit.Ipp.Core.Configuration;
 using System.Net;
-using System.Web;
+using System.Web.UI.WebControls;
+
 
 
 
@@ -385,7 +386,7 @@ namespace JSQBTest
 
             AuthenticateQB();
 
-
+            
 
 
 
@@ -451,6 +452,7 @@ namespace JSQBTest
             ProcessStartInfo sInfo = new ProcessStartInfo(authorizeUrl);
 
             Process.Start(sInfo);
+            
 
         }
 
